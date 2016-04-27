@@ -1,50 +1,326 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/league.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h1>JavaScript</h1>
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <section>
+            <blockquote>
+                Java and Javascript are similar like Car and Carpet are similar.
+            </blockquote>
+            <!--
+            <div style="text-align: right; margin-top: 50px;">
+                <small>Somewhere from stackoverflow</small>
+            </div>
+            -->
+        </section>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+        <section class="slide-background present" data-background="img/wat-gif.gif"></section>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <section>
+            <section>
+                <h2>What is JavaScript?</h2>
+            </section>
+
+            <section>
+                <h3>Interpreted programming language</h3>
+            </section>
+
+            <section>
+                <h3>Designed to make Web pages interactive</h3>
+            </section>
+
+            <section>
+                <h3> Open and Cross-platform</h3>
+            </section>
+            <section>
+                <h3> !Java (Not A Java!!!)</h3>
+            </section>
+        </section>
+
+        <section>
+            <section><h2>Little bit boring...</h2></section>
+        </section>
+
+        <section>
+            <section>
+                <h2>History</h2>
+            </section>
+
+            <section >
+                <p>
+                    <img src="img/brendan.jpg" alt="">
+                </p>
+                <p>Brendan Eich</p>
+            </section>
+
+            <section>
+                <h3>Eich wrote scripting language in 10 days, in May 1995. </h3>
+                <p>JavaScript’s first code name was Mocha</p>
+            </section>
+
+            <section>
+                <h3>Netscape marketing later changed it to LiveScript. </h3>
+                <p>Netscape's several products already had the prefix “Live.”</p>
+            </section>
+
+            <section>
+                <h3>In early December 1995, language was renamed again to JavaScript </h3>
+                <p>Due to momentum growing of Java </p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>What can be done with JavaScript?</h2>
+            </section>
+
+            <section>
+                <h3>Web applications</h3>
+            </section>
+
+            <section>
+                <h3>Mobile applications</h3>
+            </section>
+
+            <section>
+                <h3>Desktop applications</h3>
+            </section>
+
+            <section>
+                <h3>Drones ...</h3>
+            </section>
+
+            <section class="slide-background present" data-background="img/everything.gif">
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Why JavaScript?</h2>
+            </section>
+            
+            <section>
+                <img src="img/stack-stats.png" alt="">
+            </section>
+
+            <section>
+                <h3>Less server interaction</h3>
+            </section>
+
+            <section>
+                <h3>Immediate feedback to the visitors</h3>
+            </section>
+
+            <section>
+                <h3>Increased interactivity</h3>
+            </section>
+            
+            <section>
+                <h3>Richer interfaces</h3>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2>From Web pages to Web applications</h2>
+            </section>
+
+            <section>
+                <h3>Web pages (traditional client/server communication)</h3>
+                <img src="img/traditional1.png" alt="">
+            </section>
+
+            <section>
+                <h3>Web pages/sites</h3>
+                <p class="fragment">jQuery</p>
+                <p class="fragment">Underscore</p>
+                <p class="fragment">Prototype</p>
+                <p class="fragment">D3</p>
+                <p class="fragment">...</p>
+            </section>
+
+            <section>
+                <h3>Web applications (SPA)</h3>
+                <img src="img/traditional2.png" alt="">
+            </section>
+
+            <section>
+                <h3>Web applications</h3>
+                <p class="fragment">Angular <span class="fragment">2.0</span></p>
+                <p class="fragment">React</p>
+                <p class="fragment">Backbone</p>
+                <p class="fragment">Ember</p>
+                <p class="fragment">Polymer</p>
+            </section>
+
+            <section>
+                <h3>Let's compare them</h3>
+                <img src="img/frame-table.png" alt="">
+            </section>
+
+            <section>
+                <img src="img/angular-icon.png" alt="" style="background: none; border: none; box-shadow: none;">
+
+            </section>
+
+            <section>
+                <h3>Angular Pros</h3>
+                <p class="fragment pros">Two-way data binding</p>
+                <p class="fragment pros">DOM manipulation</p>
+                <p class="fragment pros">Faster application prototyping</p>
+                <p class="fragment pros">Highly testable products</p>
+                <p class="fragment pros">The Plain HTML templates</p>
+            </section>
+
+            <section>
+                <h3>Angular Cons</h3>
+                <p class="fragment cons">Difficult learning</p>
+                <p class="fragment cons">The scopes</p>
+                <p class="fragment cons">Other difficult features</p>
+                <p class="fragment cons">Possible time consumption</p>
+            </section>
+
+            <section>
+                <img src="img/React.png" alt="" style="background: none; border: none; box-shadow: none;">
+            </section>
+
+            <section>
+                <h3>React Pros</h3>
+                <p class="fragment pros">Light-weighted</p>
+                <p class="fragment pros">Components</p>
+                <p class="fragment pros">DOM and data changes</p>
+                <p class="fragment pros">JSX</p>
+                <p class="fragment pros">Easy to master</p>
+            </section>
+
+            <section>
+                <h3>React Cons</h3>
+                <p class="fragment cons">JSX</p>
+                <p class="fragment cons">Just library</p>
+                <p class="fragment cons">Not MVC/MVVM/MV*</p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>JavaScript + Backend = Node.js</h2>
+                <img class="fragment" src="img/node-logo.jpg" alt="" style="background: none; border: none; box-shadow: none;">
+            </section>
+
+            <section>
+                <h3>Node.js!?</h3>
+
+                <p class="fragment">Not a framework, it’s a server.</p>
+                <p class="fragment">V8</p>
+                <p class="fragment">Open source, cross platform</p>
+                <p class="fragment">Asynchronous, event driven I/O APIs</p>
+                <p class="fragment">And all of this is <span class="fragment">JavaScript</span></p>
+            </section>
+
+            <section>
+                <h3>When to use Node.js</h3>
+                <p class="fragment">Web Socket Server</p>
+                <p class="fragment">Fast file upload client</p>
+                <p class="fragment">Data streaming</p>
+                <p class="fragment">Ad server</p>
+                <p class="fragment">Stock exchange software</p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>What about mobile apps?</h2>
+            </section>
+
+            <section>
+                <p>PhoneGap/Cordova</p>
+                <p class="fragment">Ionic</p>
+                <h3 class="fragment">React Native</h3>
+            </section>
+
+            <section>
+                <h3>"Hybrids" pros</h3>
+                <p class="fragment">Easy to code</p>
+                <p class="fragment">Cross-platform</p>
+                <p class="fragment">Easy to compile</p>
+            </section>
+            <section>
+                <h3>"Hybrids" cons</h3>
+                <p class="fragment">Buggy external libraries</p>
+                <p class="fragment">Debug == Pain</p>
+                <p class="fragment">Easy to compile</p>
+            </section>
+
+            <section>
+                <h3>"Native" pros</h3>
+                <p class="fragment">Build with js for js developers</p>
+                <p class="fragment">Native controllers</p>
+                <p class="fragment">Cross-platform</p>
+                <p class="fragment">Easy to debug</p>
+            </section>
+            <section>
+                <h3>"Native" cons</h3>
+                <p class="fragment">Build process</p>
+                <p class="fragment">Just increasing number of components</p>
+            </section>
+        </section>
+
+        <section>
+            <img src="img/tesla.png" alt="" style="background: none; border: none; box-shadow: none;">
+        </section>
+
+        <section class="slide-background present" data-background="img/that_s_all_folks__by_surrimugge-d6rfav1.png">
+        </section>
+
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            }
+        ]
+    });
+</script>
+</body>
 </html>
